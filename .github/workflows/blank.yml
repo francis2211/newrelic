@@ -1,0 +1,52 @@
+{
+    "accountId": 3589859,
+    "region": “US”,
+    "tests": [
+        {
+            "monitorGuid": "ENTITY_GUID",
+            "config": {
+                "isBlocking": false
+            }
+        },
+        {
+            "monitorGuid": "ENTITY_GUID",
+            "config": {
+                "isBlocking": false
+            }
+        },
+        {
+            "monitorGuid": "ENTITY_GUID",
+            "config": {
+                "isBlocking": true,
+                "overrides": {
+                    "location": "AWS_US_EAST_1",
+                    "secureCredential": [
+                        {
+                            "key": "SHORT_CREDENTIAL1",
+                            "overrideKey": "LONG_CREDENTIAL1"
+                        },
+                        {
+                            "key": "SHORT_CREDENTIAL2",
+                            "overrideKey": "LONG_CREDENTIAL2"
+                        }
+                    ],
+                    "domain": [
+                        {
+                            "domain": "http://httpbin.org",
+                            "override": "http://example.com"
+                        }
+                    ],
+                    "startingUrl": "https://example.com"
+                }
+            }
+        }
+    ],
+    "config": {
+        "batchName": "An automated batch",
+        "branch": "myBranch",
+        "commit": "abc123",
+        "deepLink": "https://example.com",
+        "platform": "GitHub Actions",
+        "repository": "myRepo"
+    }
+}
